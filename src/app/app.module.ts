@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RealButtonModule } from 'real-button';
+import { RealDragDropModule } from 'real-drag-drop';
 
 import { AppComponent } from './app.component';
 
@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    RealButtonModule
+    RealDragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]

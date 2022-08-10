@@ -1,0 +1,7 @@
+<div class="drag-drop-dropzone" libDragDropEvents (fileDropped)="onFileDropped($event)"
+  [style.border-color]="borderColor"
+  [style.border-style]="borderStyle"
+  [style.border-size]="borderSize + 'px'">
+  <input class="drag-drop-dropzone__file-input" type="file" #file id="file" multiple />
+  <ng-content></ng-content>
+</div>

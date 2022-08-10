@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-custom-elements';
+
+  filesHandler(files: File[]): void {
+    console.log(files);
+  }
 }

@@ -1,1 +1,6 @@
-<lib-real-button color='red' body='Cool button'></lib-real-button>
+
+<div class="dropzone-limit">
+  <lib-real-drag-drop [borderSize]="5" [borderStyle]="'dashed'" (filesCallback)="filesHandler($event)">
+    Drag and drop content
+  </lib-real-drag-drop>
+</div>
