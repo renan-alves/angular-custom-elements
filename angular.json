@@ -102,6 +102,68 @@
           }
         }
       }
+    },
+    "real-drag-drop": {
+      "projectType": "library",
+      "root": "projects/real-drag-drop",
+      "sourceRoot": "projects/real-drag-drop/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/real-drag-drop/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/real-drag-drop/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/real-drag-drop/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/real-drag-drop/src/test.ts",
+            "tsConfig": "projects/real-drag-drop/tsconfig.spec.json",
+            "karmaConfig": "projects/real-drag-drop/karma.conf.js"
+          }
+        }
+      }
+    },
+    "real-button": {
+      "projectType": "library",
+      "root": "projects/real-button",
+      "sourceRoot": "projects/real-button/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/real-button/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/real-button/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/real-button/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/real-button/src/test.ts",
+            "tsConfig": "projects/real-button/tsconfig.spec.json",
+            "karmaConfig": "projects/real-button/karma.conf.js"
+          }
+        }
+      }
     }
   }
 }

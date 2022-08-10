@@ -16,6 +16,14 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
+    "paths": {
+      "real-button": [
+        "dist/real-button"
+      ],
+      "real-drag-drop": [
+        "dist/real-drag-drop"
+      ]
+    },
     "target": "es2020",
     "module": "es2020",
     "lib": [
